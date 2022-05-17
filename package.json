@@ -1,5 +1,5 @@
 {
-  "homepage": "https://dbrill.github.io/testudao_site",
+  "homepage": "https://testudoventures.xyz",
   "name": "testudao_site",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "echo 'testudoventures.xyz' > ./build/CNAME && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
