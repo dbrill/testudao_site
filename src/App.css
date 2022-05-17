@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.turtle {
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.turtle > path {
+  stroke-width: 2;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
