@@ -16,4 +16,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 2. look into using scss instead of vanilla css
 3. make things responsive
 4. remove unused dependencies, styles, and boilerplate
+5. add favicon
 ###### *if you're from blackpool and you're seeing this... nice design <3*
