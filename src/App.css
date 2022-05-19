@@ -1,20 +1,19 @@
 .App {
   text-align: center;
+  font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main-Block {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  max-width: 40.5rem;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
+.App-Header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,26 +23,57 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  border-style: dashed;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-right: none;
+  border-left: none;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+  justify-content: left;
+  align-items: center;
+  font-size: 1rem;
 }
 
-.turtle {
-  position: absolute;
-  top: 10px;
-  width: 150px;
-  height: 150px;
+.Logo {
+  height: 1.75rem;
+  cursor: crosshair;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.turtle > path {
-  stroke-width: 2;
+.Main-Text {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Body-Text-1 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom:1.5rem;
+}
+
+.Body-Text-2 {
+font-size: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.Foot {
+  border-style: dashed;
+  border-top-width: 1px;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  margin-top: 10.5rem;
 }
