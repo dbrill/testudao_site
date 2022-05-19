@@ -7,7 +7,7 @@ function App() {
       <header className="App-Header">
       <div className="Main-Block flex flex-col">
         <div className="Header flex">
-          <img className="Logo" src={Turtle}/>
+          <img className="Logo" src={Turtle} alt="Testudo Ventures Logo"/>
           Testudo Ventures
         </div>
         <h2 className="Main-Text">
