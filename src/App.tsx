@@ -1,30 +1,58 @@
 import Turtle from './images/testudao.svg';
+import React from 'react';
+import HeaderNavigation from './components/HeaderNavigation';
+import About from './components/About';
+import Investments from './components/Investments';
+import tabs from "./util/enums";
 import './App.css';
 
-function App() {
-  return (
+type Props = {};
+
+class App extends React.Component<{}, {selected: tabs}> {
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      selected: tabs.ABOUT
+    }
+  }
+
+  changeTab = (newTab: tabs) => {
+    this.setState({
+      selected: newTab
+    });
+  };
+
+   body = () => {
+     if (this.state.selected == tabs.ABOUT) {
+    return (
+      <About/>
+    )
+     } else {
+       return (
+         <Investments/>
+       )
+     }
+  }
+
+  render() {return (
     <div className="App">
       <header className="App-Header">
-      <div className="Main-Block flex flex-col">
-        <div className="Header flex">
-          <img className="Logo" src={Turtle} alt="Testudo Ventures Logo"/>
-          Testudo Ventures
-        </div>
-        <h2 className="Main-Text">
-          Dumb as Ape. Slow as Turtle.
-        </h2>
-        <p className="Body-Text-1">
-          What follows is the beginning of the greatest financial, technical, and spiritual collaboration this world has ever known.
-        </p>
-        <p className="Body-Text-2">
-          We may be on our back, but make no mistake... we will roll over.
-        </p>
-        <div className="Foot"/>
+        <div className="Main-Block flex flex-col">
+          <div className="Header flex">
+            <div className="Header-Branding">
+              <img className="Logo" src={Turtle} alt="Testudo Ventures Logo" />
+              Testudo Ventures
+            </div>
+            <HeaderNavigation changeTab={this.changeTab}/>
+          </div>
+          {this.body()}
+          <div className="Foot" />
         </div>
       </header>
 
     </div>
   );
+  }
 }
 
 export default App;
