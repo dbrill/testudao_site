@@ -7,6 +7,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+console.log("Ahhh looking under the hood are we?\n\nWell go on then....\
+ we've nothing to hide ;)\n\nIf you do... umm... find something that\
+ we probably should be hiding though...\nmaybe open a github issue for us? That'd be great <3\
+ \n\nOr not... I don't know... all's fair in love and crypto I suppose");
+
 root.render(
   <React.StrictMode>
     <App />

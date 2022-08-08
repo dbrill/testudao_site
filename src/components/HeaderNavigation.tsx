@@ -10,7 +10,6 @@ class HeaderNavigation extends React.Component<{changeTab: Function}, { selected
     }
 
     handleClick = (tabName: tabs) => {
-        console.log(`${tabName} clicked!`);
         this.props.changeTab(tabName);
         this.setState({
             selected: tabName

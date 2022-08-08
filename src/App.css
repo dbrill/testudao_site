@@ -33,20 +33,28 @@
 }
 
 .Investments-Header {
-  padding-bottom: 3rem;
-}
-
-.Investment {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 5rem;
-  padding-left: 5rem;
   border-style: dashed;
   border-bottom-width: 1px;
   border-top: none;
   border-right: none;
   border-left: none;
-  border-color: green;
+  border-color: #2d3740;
+  color: #c9c8c8;
+  margin-bottom: 3rem;
+}
+
+.Investment {
+  border-style: dashed;
+  border-bottom-width: 1px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgb(1, 95, 1);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .Header {
@@ -75,6 +83,10 @@
 .Tab {
   cursor: pointer;
   margin-left: 2rem;
+}
+
+.Tab:hover:not(.Selected) {
+  background: rgb(65, 65, 65);
 }
 
 .Selected {

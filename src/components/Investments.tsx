@@ -10,12 +10,7 @@ function Investments(props: Props) {
                 {INVESTMENTS.map((investment) => {
                     return (
                         <div className="Investment" key={investment.company}>
-                            <div>
                                 {investment.company}
-                            </div>
-                            <div>
-                                ${investment.amount}
-                            </div>
                         </div>
                     );
                 })}
