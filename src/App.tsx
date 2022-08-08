@@ -23,7 +23,7 @@ class App extends React.Component<{}, {selected: tabs}> {
   };
 
    body = () => {
-     if (this.state.selected == tabs.ABOUT) {
+     if (this.state.selected === tabs.ABOUT) {
     return (
       <About/>
     )

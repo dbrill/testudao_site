@@ -17,10 +17,10 @@ class HeaderNavigation extends React.Component<{changeTab: Function}, { selected
     };
     render() {
         return (<div className="Header-Navigation">
-            <div className={`${tabs.ABOUT} Tab ${this.state.selected == tabs.ABOUT ? "Selected" : ""}`} onClick={() => this.handleClick(tabs.ABOUT)}>
+            <div className={`${tabs.ABOUT} Tab ${this.state.selected === tabs.ABOUT ? "Selected" : ""}`} onClick={() => this.handleClick(tabs.ABOUT)}>
                 About
             </div>
-            <div className={`${tabs.INVESTMENTS} Tab ${this.state.selected == tabs.INVESTMENTS ? "Selected" : ""}`} onClick={() => this.handleClick(tabs.INVESTMENTS)}>
+            <div className={`${tabs.INVESTMENTS} Tab ${this.state.selected === tabs.INVESTMENTS ? "Selected" : ""}`} onClick={() => this.handleClick(tabs.INVESTMENTS)}>
                 Investments
             </div>
         </div>);
